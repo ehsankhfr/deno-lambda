@@ -7,4 +7,4 @@ example-sam/.aws-sam/*
 ./idea
 dyno
 dynamo*
-.vsode
+.vscode
