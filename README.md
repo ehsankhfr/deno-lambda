@@ -66,8 +66,8 @@ Further configuration TBD.
 
 deno-lambda exports Definitely Typed's
 [aws-lambda types](https://www.npmjs.com/package/@types/aws-lambda), listed in
-https://deno.land/x/lambda/mod.ts and defined in
-https://deno.land/x/lambda/types.d.ts.
+<https://deno.land/x/lambda/mod.ts> and defined in
+<https://deno.land/x/lambda/types.d.ts>.
 
 It's good practice to reference the trigger's type in the handler, for example:
 APIGateway use `APIGatewayProxyEventV2` and `APIGatewayProxyResultV2`, SQS use
@@ -242,4 +242,3 @@ Use these as a template literal, for example:
 This will prefix each log with the level, the request id and the line number:
 
 <img width="385" alt="Screen Shot 2020-02-11 at 18 12 42" src="https://user-images.githubusercontent.com/1931852/74296949-313f7a00-4cfa-11ea-8293-e37a1712cd3d.png">
-this repository._
