@@ -1,0 +1,16 @@
+{
+  "env": { "_HANDLER": "handlers.runDeno" },
+  "events": [{ "hello": "deno" }, { "hello": "again" }],
+  "expected": [
+    {
+      "status": "ok",
+      "content": "{\"out\":\"1.32.5\"}"
+    },
+    {
+      "status": "ok",
+      "content": "{\"out\":\"1.32.5\"}"
+    }
+  ],
+  "files": ["handlers.ts"],
+  "layer": "deno-lambda-layer.zip"
+}
