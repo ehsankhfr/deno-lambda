@@ -55,8 +55,8 @@ jobs:
           python3 -m pip -q install --user aws-sam-cli
           export AWS_EC2_METADATA_DISABLED=true
           echo copying-s3-objs
-          aws s3 cp --quiet deno-lambda-layer.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-layer_$DENO_LAMBDA_VERSION.zip --acl public-read
-          aws s3 cp --quiet deno-lambda-example.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-example_$DENO_LAMBDA_VERSION.zip --acl public-read
+          aws s3 cp --quiet deno-lambda-layer.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-layer_$DENO_LAMBDA_VERSION.zip
+          aws s3 cp --quiet deno-lambda-example.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-example_$DENO_LAMBDA_VERSION.zip
           echo ---
           cd SAR
           sed -i -e s/DENO_LAMBDA_BUCKET/$DENO_LAMBDA_BUCKET/g template.yml
