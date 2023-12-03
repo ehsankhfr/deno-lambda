@@ -37,6 +37,8 @@ Metadata:
       Deno example function blueprint for AWS Lambda
     Author: Ehsan Khakifirooz
     SpdxLicenseId: MIT
+    LicenseUrl: LICENSE
+    ReadmeUrl: README.md
     Labels:
     - deno
     - lambda
