@@ -57,6 +57,8 @@ jobs:
           echo copying-s3-objs
           aws s3 cp --quiet deno-lambda-layer.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-layer_$DENO_LAMBDA_VERSION.zip
           aws s3 cp --quiet deno-lambda-example.zip s3://$DENO_LAMBDA_BUCKET/deno-lambda-example_$DENO_LAMBDA_VERSION.zip
+          aws s3 cp --quiet README.md s3://$DENO_LAMBDA_BUCKET/README.md
+          aws s3 cp --quiet LICENSE s3://$DENO_LAMBDA_BUCKET/LICENSE
           echo ---
           cd SAR
           sed -i -e s/DENO_LAMBDA_BUCKET/$DENO_LAMBDA_BUCKET/g template.yml
