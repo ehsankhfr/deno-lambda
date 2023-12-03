@@ -26,6 +26,8 @@ Metadata:
       Deno runtime for AWS Lambda
     Author: Ehsan Khakifirooz
     SpdxLicenseId: MIT
+    LicenseUrl: LICENSE
+    ReadmeUrl: README.md
     Labels:
     - deno
     - layer
