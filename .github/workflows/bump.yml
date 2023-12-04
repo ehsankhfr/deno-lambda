@@ -11,8 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: denoland/setup-deno@v1
-        with:
-          deno-version: "1.32.5"
       - name: version
         id: version
         run: |
