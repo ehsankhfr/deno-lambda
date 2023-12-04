@@ -1,9 +1,12 @@
 name: Version Bump
-
+  
 on:
   workflow_dispatch:
   schedule:
     - cron: "42 19 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   version-bump:
